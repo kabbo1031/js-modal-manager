@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Modal Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button onclick="openModal('login')">Open Login</button>
+  <button onclick="openModal('info')">Open Info</button>
+
+  <div id="overlay" onclick="closeModal()"></div>
+
+  <div id="login" class="modal">
+    <h3>Login Modal</h3>
+    <p>This is login modal</p>
+    <button onclick="closeModal()">Close</button>
+  </div>
+
+  <div id="info" class="modal">
+    <h3>Info Modal</h3>
+    <p>This is info modal</p>
+    <button onclick="closeModal()">Close</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
